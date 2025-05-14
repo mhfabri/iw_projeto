@@ -63,7 +63,7 @@ nav ul li a {
 }
 
 .banner{
-    background: url(../img/banner.jpeg) no-repeat center/cover;
+    background: url(../img/banner.jpg) no-repeat center/cover;
     height: 750px; 
     display: flex;
     margin-top: 106px;
@@ -147,12 +147,12 @@ section{
 
 .hex img{
     width: 100%;
-    /*height: 100%;*/
-    /*object-fit: cover ;*/
+    height: 100%;
+    object-fit: cover ;
 }
 
 
-
+/*
 
 #personagens{
     padding: 35px;
@@ -175,10 +175,10 @@ section{
     padding: 20px;
 }
 
-/* .personagens-texto h1{
+ .personagens-texto h1{
     font-size: 1.8em;
     margin-bottom: 20px; 
-}*/
+
 
 .personagens-texto p {
     font-size: 1;
@@ -201,7 +201,7 @@ section{
 
 .fonte{
     font-size: 0.8em ;
-}
+}*/
 
 
 
@@ -260,9 +260,21 @@ section{
 
 
 
+#personagens .personagens-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+    padding: 50px 0;
+}
 
-
-
+#personagens .item{
+    background-color: red;
+    border:#373737;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
 
 
 @media(max-width:575px){
