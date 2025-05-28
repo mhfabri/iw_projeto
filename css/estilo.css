@@ -231,7 +231,10 @@ section{
 
 .curiosidade-texto h1{
     font-size: 1.8em;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: black;
+
 }
 
 .curiosidade-texto p {
@@ -241,11 +244,7 @@ section{
     margin-top: 10px;
 }
 
-.curiosidade-texto h2{
-    margin-top: 20px;
-    color: black;
 
-}
 
 .curiosidade-texto a{
     color: #ffffff;
@@ -267,6 +266,12 @@ section{
     text-align: center;
     padding: 50px 0;
     margin: auto;
+}
+
+#personagens h1{
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    
 }
 
 #personagens .item{
@@ -336,7 +341,7 @@ section{
     top: 0;
     left: 0;
     width: 100vw;
-    height: 10vh;
+    height: 100vh;
     background: rgba(0, 0, 0, 0.6);
     display: none;
     justify-content: center;
