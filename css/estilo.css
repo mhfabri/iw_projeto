@@ -346,6 +346,7 @@ section{
     display: none;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
 .modal:target{
