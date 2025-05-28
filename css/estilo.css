@@ -259,8 +259,25 @@ section{
     border-radius: 10px;
 }
 
+.contentcaio{
+    padding:  0 0 70px 0;
+}
 
+.contentdjonga{
+    padding: 0 0 38px 0;
+}
 
+.contentpuma{
+    padding: 0 0 3px 0;
+}
+
+.contentsono{
+    padding: 0 0 88px 0;
+}
+
+.contentracionais{
+    padding: 0 0 50px 0;
+}
 
 
 .card{
