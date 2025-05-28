@@ -152,56 +152,7 @@ section{
 }
 
 
-/*
 
-#personagens{
-    padding: 35px;
-    background-color:#818181  ;
-    color: #fff;
-    
-}
-
-.personagens-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-    max-width: 1400px;
-    margin: auto;
-}
-
-.personagens-texto{
-    flex: 1;
-    padding: 20px;
-}
-
- .personagens-texto h1{
-    font-size: 1.8em;
-    margin-bottom: 20px; 
-
-
-.personagens-texto p {
-    font-size: 1;
-    line-height: 1.5;
-    text-align: justify;
-    margin-top: 10px;
-}
-
-.personagens-texto h2{
-    margin-top: 20px;
-    color: black;
-
-}
-
-.personagens-texto a{
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 0.8em;
-}
-
-.fonte{
-    font-size: 0.8em ;
-}*/
 
 
 
@@ -269,9 +220,10 @@ section{
 }
 
 #personagens h1{
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    
+    font-size: 2;
+    line-height: 1.8;
+    text-align: center;
+    margin-top: 10px;
 }
 
 #personagens .item{
@@ -306,6 +258,7 @@ section{
     margin-bottom: 10px;
     border-radius: 10px;
 }
+
 
 
 
