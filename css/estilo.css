@@ -13,6 +13,7 @@
     font-family: "Peralta", serif;
     font-weight: 400;
     font-style: normal;
+    scroll-behavior: smooth;
 }
 
 .container{
@@ -168,18 +169,10 @@ section{
 #curiosidades{
     padding: 35px;
     background-color:#818181  ;
-    color: #fff;
-    
+    color: black;
+    text-align: center;
 }
 
-.curiosidade-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-    max-width: 1400px;
-    margin: auto;
-}
 
 .galeria h1{
     font-size: 1.8em;
