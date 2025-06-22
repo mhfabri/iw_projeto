@@ -66,13 +66,13 @@ nav ul li a {
 
 .banner{
     background: url(../img/banner.jpg) no-repeat center/cover;
-    height: 750px; 
+    height: 400px; 
     display: flex;
-    margin-top: 106px;
+    margin-top: 70px;
     align-items:center;
     justify-content: center;
     color: #ffffff;
-    font-size: 1.8em;
+    font-size: 1.8rem;
     text-align: left;
     text-shadow: 4px 2px  black;
 }
@@ -131,9 +131,7 @@ section{
     font-size: 0.8em;
 }
 
-.fonte{
-    font-size: 0.8em ;
-}
+
 
 .hex-grid{
     display: flex;
@@ -170,23 +168,23 @@ section{
     padding: 35px;
     background-color:#818181  ;
     color: black;
-    text-align: center;
+    
 }
 
 
-.galeria h1{
+.curiosidade h1{
     font-size: 1.8em;
     margin-bottom: 20px;
     margin-top: 20px;
     color: black;
-
+    text-align: center;
 }
 
 .galeria{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap:20px ;
-    /* max-width: 1000px; */
+    
     margin:auto;
 
 }
@@ -194,15 +192,31 @@ section{
 .galeriaimg{
     width: 100%;
     
-    border-radius: 10px  black;
-    overflow: hidden;
+    border-radius: 10px;
+    
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     
-    transition: transform 0.3s ease; 
+    transition: transform 0.1s ease; 
 }
 
+.galeriaimg img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
+.galeria figure{
+    text-align: center;
+}
 
+.galeriaimg:hover{
+    transform: scale(1.1);
+}
+
+.fonte{
+    color: darkgray;
+    font-size: 0.8em;
+}
 
 #personagens .container{
     display: grid;
@@ -352,7 +366,7 @@ section{
     }
 
     .banner{
-        margin-top: 120px;
+        margin-top: 180px;
     }
 
     
@@ -368,4 +382,17 @@ section{
         max-height: 50vh;
     }
    
+     .galeria{
+        flex-direction: column;
+        display: flex;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .galeriaimg{
+        flex-direction: column;
+        display: flex;
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 100%;
+    }
 }
