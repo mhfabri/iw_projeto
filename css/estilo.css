@@ -136,7 +136,7 @@ section{
 .hex-grid{
     display: flex;
     flex-wrap:wrap;
-    gap: 15px;
+    gap: 18px;
     justify-content: center;
     flex: 1;
 }
@@ -172,7 +172,7 @@ section{
 }
 
 
-.curiosidade h1{
+#curiosidades h1{
     font-size: 1.8em;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -182,27 +182,25 @@ section{
 
 .galeria{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 4fr));
     gap:20px ;
-    
-    margin:auto;
-
+    margin: 200px auto;
+    gap: 40px;
 }
 
 .galeriaimg{
     width: 100%;
-    
-    border-radius: 10px;
-    
+    border-radius: 60px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    
-    transition: transform 0.1s ease; 
+    transition: transform 0.1s ease;
+    max-width: 300px;
 }
 
 .galeriaimg img{
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 60px;
 }
 
 .galeria figure{
