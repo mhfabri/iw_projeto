@@ -77,6 +77,19 @@ nav ul li a {
     text-shadow: 4px 2px  black;
 }
 
+.banner-contato{
+    background: url(../img/bannercontato.png) no-repeat center/cover;
+    height: 400px; 
+    display: flex;
+    margin-top: 70px;
+    align-items:center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1.8rem;
+    text-align: left;
+    text-shadow: 4px 2px  black;
+}
+
 .titulobanner{
     margin-left: 20px;
 }
