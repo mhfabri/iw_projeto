@@ -29,7 +29,7 @@ body{
 header{
     background-color:#373737;
     color:#ffffff;
-    padding:15px 15px 15px 15px;
+    padding:5px;
     width: 100%;
     top: 0;
     position: fixed;
@@ -44,8 +44,9 @@ header .container{
 }
 
 .logo{
-    font-size: 2em;
     font-weight:bold ;
+    width: 25%;
+    border-radius: 100%;
 }
 
 nav ul{
@@ -337,7 +338,7 @@ section{
     max-width: 800px;
     margin: auto;
     margin-top: 40px;
-    color: #4d3f72;
+    color: black;
 }
   
 .grupo-form {
@@ -366,6 +367,10 @@ section{
 .grupo-form label {
     margin-bottom: 5px;
     font-weight: bold;
+}
+
+label{
+    color: darkgray;
 }
 
 
