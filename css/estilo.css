@@ -465,4 +465,7 @@ footer{
         margin-right: 15px;
         width: 100%;
     }
+    .titulobanner{
+        font-size: 25px;
+    }
 }
