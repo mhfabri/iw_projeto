@@ -120,6 +120,10 @@ section{
     padding: 20px;
 }
 
+.sobre-container .sobre-texto a{
+    color: blue;
+}
+
 .sobre-texto h1{
     font-size: 1.8em;
     margin-bottom: 20px;
@@ -422,6 +426,80 @@ footer{
     color: white;
     border-radius: 6px;
     text-decoration: none;
+}
+
+
+/* table css */
+
+.table_container {
+    width: 80%;
+    overflow-x: auto; /* Ativa rolagem horizontal se precisar */
+    -webkit-overflow-scrolling: touch; /* Rolagem suave no mobile */
+    margin: auto;
+  }
+  
+  
+  .table_container table {
+    min-width: 700px;
+  }
+  .tabela {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .tabela th, 
+  .tabela td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.435);
+  }
+  
+  .tabela thead {
+    background: rgb(166, 124, 9);
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .tabela tbody tr:hover{
+    background-color: rgba(255, 123, 0, 0.388);
+    transition: background-color 0.3s;
+  }
+
+
+  /* game css */
+
+.game_container{
+    position: relative;
+}
+
+.topleft{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.topright{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.bottomleft{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.bottomright{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
 }
 
 
