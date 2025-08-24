@@ -9,43 +9,208 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Peralta&family=Rubik+Puddles&display=swap" rel="stylesheet">
+<style>
+
+
+
+    .container{ 
+        max-width:900px; 
+        margin:auto; 
+        padding:20px; 
+        position: relative; 
+        margin-top: 200px;
+    }
+
+    .containerhud{ 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        /* margin-right: 20px;
+        margin-left: 20px; */
+        /* font-size: 20px; */
+    }
+
+    .game_container{ 
+        background:#1c1c1c; 
+        border-radius:25px; 
+        padding:40px; 
+        text-align:center; 
+        margin-top:30px; 
+        box-shadow:0 0 40px #000; 
+        border:2px solid #fca311; 
+        position: relative; 
+    }
+    .question{ 
+        font-size:1.6rem; 
+        margin-bottom:30px; 
+        color:#fca311; 
+        text-shadow: 2px 2px #000; 
+    }
+    .options button{ 
+        display:block; 
+        width:90%; 
+        margin:15px auto; 
+        padding:15px; 
+        font-size:1.2rem; 
+        border:none; 
+        border-radius:15px; 
+        cursor:pointer; 
+        background:#555; 
+        color:#fff; 
+        transition:0.3s; 
+        box-shadow: 0 4px 6px rgba(0,0,0,0.3); 
+    }
+    .options button:hover{ 
+        background:#fca311; 
+        color:#000; 
+        transform: scale(1.05); 
+    }
+    .result{ 
+        margin-top:25px; 
+        font-size:1.3rem; 
+        color:#00ff90; 
+        text-shadow:1px 1px #000; 
+    }
+    .topleft, 
+    .topright, 
+    .bottomleft, 
+    .bottomright{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    background-color: rgba(252, 163, 17, 0.6);
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+    .topleft:hover, .topright:hover, .bottomleft:hover, .bottomright:hover{
+    background-color: rgba(252, 163, 17, 1);
+    transform: scale(1.1);
+    }
+    .topleft{ 
+        top: -60px; 
+        left: -60px; 
+    }
+    .topright{ 
+        top: -60px; 
+        right: -60px; 
+    }
+    .bottomleft{ 
+        bottom: -60px; 
+        left: -60px; 
+    }
+    .bottomright{ 
+        bottom: -60px; 
+        right: -60px; 
+    }
+
+
+    
+</style>
 </head>
 <body>
     <header>
-       
-        <div class="container">
+        <div class="containerhud">
             <div class="logo">
                 <a href="index.html"><img class="logo" src="img/favicon.png" alt="Logo Boombap"></a>
             </div>
+
             <nav>
                 <ul>
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#personagens">Cantores </a></li>
-                    <li><a href="#curiosidades">Galeria</a></li>
+                    <li><a href="index.html#inicio">Início</a></li>
+                    <li><a href="index.html#sobre">Sobre</a></li>
+                    <li><a href="index.html#personagens">Cantores </a></li>
+                    <li><a href="index.html#curiosidades">Galeria</a></li>
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
-
             </nav>
         </div>
     </header>
-    <section id="inicio" class="banner">
-        <h1 class="titulobanner">A gigante história do Boombap e seus principais artistas.</h1>
-    </section>
-    <main>
-        
-        <div class="game_container">
-            <img src="img/rap.png" alt="#rap">
-            <div class="topleft">topleft</div>
-            <div class="topright">topright</div>
-            <div class="buttonleft">buttonleft</div>
-            <div class="buttonright">buttonright</div>
-        </div>
+<div class="container">
+  <div class="game_container" id="gameRoot">
+    <div class="question" id="questionText">Carregando pergunta...</div>
+    <div class="options" id="optionsContainer"></div>
+    <div class="result" id="resultText"></div>
+    <div class="topleft" id="pad1">🎧</div>
+    <div class="topright" id="pad2">🎤</div>
+    <div class="bottomleft" id="pad3">🥁</div>
+    <div class="bottomright" id="pad4">🎶</div>
+  </div>
+</div>
+<script>
+const questions = [
+  { q: "Qual elemento caracteriza o boombap clássico?", a: ["Kick forte e snare seco", "Trap hi-hats rápidos", "Flow melódico suave", "Auto-Tune pesado"], correct: 0 },
+  { q: "Qual subgênero do rap atual mistura funk e rap?", a: ["Boom Bap", "Trap Funk", "Old School", "Conscious Rap"], correct: 1 },
+  { q: "Qual instrumento é mais usado para criar o groove no underground?", a: ["Sintetizador de cordas", "808 Bass", "Sample de vinil e bateria", "Violino"], correct: 2 },
+  { q: "Quem é referência do rap consciente no Brasil?", a: ["Projota", "Emicida", "MC Kevinho", "MC Fioti"], correct: 1 },
+  { q: "O que caracteriza o estilo 'Lo-Fi Hip Hop'?", a: ["Batidas suaves e samples antigos", "BPM acelerado e gritos", "Autotune e trap", "Instrumentos clássicos"], correct: 0 }
+];
 
-    </main>
+let currentIndex = 0;
+let score = 0;
+const questionText = document.getElementById('questionText');
+const optionsContainer = document.getElementById('optionsContainer');
+const resultText = document.getElementById('resultText');
 
-<footer>
-    <p>Desenvolvido por < / Fabri > </p>
-</footer>
+function loadQuestion(){
+  if(currentIndex >= questions.length){
+    questionText.textContent = `🎯 Quiz finalizado! Sua pontuação: ${score} / ${questions.length}`;
+    optionsContainer.innerHTML = '';
+    resultText.textContent = '';
+    return;
+  }
+
+  const q = questions[currentIndex];
+  if(!q){
+    questionText.textContent = `Erro: pergunta não encontrada.`;
+    optionsContainer.innerHTML = '';
+    resultText.textContent = '';
+    return;
+  }
+
+  questionText.textContent = q.q;
+  optionsContainer.innerHTML = '';
+  q.a.forEach((opt, i)=>{
+    const btn = document.createElement('button');
+    btn.textContent = opt;
+    btn.onclick = ()=>checkAnswer(i);
+    optionsContainer.appendChild(btn);
+  });
+  resultText.textContent = '';
+}
+
+function checkAnswer(i){
+  if(currentIndex >= questions.length) return;
+
+  const q = questions[currentIndex];
+  if(!q) return;
+
+  const correctIndex = q.correct;
+  if(i === correctIndex){
+    score++;
+    resultText.textContent = '✅ Correto!';
+  } else {
+    resultText.textContent = `❌ Errado! Resposta certa: ${q.a[correctIndex]}`;
+  }
+  currentIndex++;
+  setTimeout(loadQuestion, 1500);
+}
+
+const pads = [document.getElementById('pad1'), document.getElementById('pad2'), document.getElementById('pad3'), document.getElementById('pad4')];
+pads.forEach((pad, idx)=>{
+  pad.addEventListener('click', ()=>{
+    if(currentIndex < questions.length) checkAnswer(idx % 4);
+  });
+});
+
+loadQuestion();
+</script>
 </body>
 </html>

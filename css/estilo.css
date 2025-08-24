@@ -476,6 +476,14 @@ footer{
 
 .game_container{
     position: relative;
+    margin: auto;
+    color: white;
+}
+
+.game_container img{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
 }
 
 .topleft{
@@ -487,7 +495,7 @@ footer{
 .topright{
     position: absolute;
     top: 8px;
-    right: 16px;
+    right: 512px;
 }
 
 .bottomleft{
@@ -499,7 +507,7 @@ footer{
 .bottomright{
     position: absolute;
     bottom: 8px;
-    right: 16px;
+    right: 512px;
 }
 
 
