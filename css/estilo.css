@@ -378,14 +378,15 @@ label{
 }
 
 .submitedforms{
-    font-size: 20px;
+    font-size: 35px;
     text-align: center;
     color: white;
+    margin-top: 50px;
 }
 
 footer{
     text-align: center;
-    
+    margin: 50px auto;
 }
 
 /* modal */
